@@ -1,0 +1,10 @@
+1:redis
+6:hash
+9:list
+10:set
+12:list
+15:set
+18:redis
+25:hash
+30:string
+100:ack
