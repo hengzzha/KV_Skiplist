@@ -28,9 +28,7 @@ public:
     Node(K k, V v, int);
 
     ~Node();
-    /* const:常量，在成员函数后面增加一个const。不单要在成员函数声明中增加const，也要在函数定义中增加const。
-告诉系统，这个函数，不会修改对象里的任何成员变量的值等等。也就是说，这个成员函数，不会修改类Time的任何状态。
-成员函数后面加const的成员函数也称为“常量成员函数”。 */
+
     K get_key() const;
 
     V get_value() const;
@@ -280,7 +278,7 @@ void SkipList<K, V>::get_key_value_from_string(const std::string& str, std::shar
         return;
     }
     *key = stoi(str.substr(0, str.find(delimiter)));
-    *value = str.substr(str.find(delimiter) + 1, str.length());  //8:微信公众号：代码随想录;
+    *value = str.substr(str.find(delimiter) + 1, str.length());
 }
 
 template <typename K, typename V>
